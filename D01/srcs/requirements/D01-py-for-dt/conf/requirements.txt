@@ -1,0 +1,7 @@
+flake8==7.1.1
+numpy==2.1.0
+pillow==10.4.0
+matplotlib==3.9.2
+PyQt5==5.15.11
+PyQt5-Qt5==5.15.14
+PyQt5_sip==12.15.0
