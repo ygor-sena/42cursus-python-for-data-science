@@ -4,7 +4,7 @@ services:
     container_name: d01-py-for-dt
     init: true
     build:
-      context: requirements/d01-py-for-dt
+      context: requirements/D01-py-for-dt
       dockerfile: Dockerfile
     environment:
       - DISPLAY=$DISPLAY
