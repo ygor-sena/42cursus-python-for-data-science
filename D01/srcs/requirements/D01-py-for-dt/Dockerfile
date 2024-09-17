@@ -4,7 +4,7 @@ FROM python:3.11.9-slim-bullseye
 # Install dependencies
 RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
 		--mount=target=/var/cache/apt,type=cache,sharing=locked \
-		rm -f /etc/apt/apt.conf.d/docker-clean \
+		rm -f /etc/apt/apt.conf.d/docker-clean && \
 		apt-get update && \
 		apt-get upgrade -y && \
 		apt-get install -y \
