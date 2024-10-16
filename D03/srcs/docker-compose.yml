@@ -1,0 +1,8 @@
+services:
+  d03-py-for-dt:
+    image: d03-py-for-dt:42
+    container_name: d03-py-for-dt
+    init: true
+    build:
+      context: requirements/D03-py-for-dt
+      dockerfile: Dockerfile
