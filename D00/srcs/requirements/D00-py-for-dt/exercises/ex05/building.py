@@ -14,7 +14,8 @@ def get_input() -> str:
     if args > 2:
         raise AssertionError("invalid number of arguments")
     if args < 2:
-        msg = input("What is the text to count?\n")
+        print("What is the text to count?")
+        msg = sys.stdin.readline()
     else:
         msg = sys.argv[1]
     return msg
@@ -41,7 +42,7 @@ def main() -> None:
     space = sum(1 for c in msg if c.isspace())
     digit = sum(1 for c in msg if c.isdigit())
 
-    print(f'The text contains {len(msg)} characters:\n' +
+    print(f'\nThe text contains {len(msg)} characters:\n' +
           f'{upper} upper letters\n' +
           f'{lower} lower letters\n' +
           f'{punct} punctuation marks\n' +
