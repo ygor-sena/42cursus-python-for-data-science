@@ -25,6 +25,7 @@ def ft_load(path: str) -> np.ndarray:
         raise AssertionError(f"invalid file format: '{path}'")
     try:
         with Image.open(path) as img:
+            np.set_printoptions(threshold=1)
             im_array = np.array(img)
     except FileNotFoundError:
         raise FileNotFoundError(f"no such file: '{path}'")
