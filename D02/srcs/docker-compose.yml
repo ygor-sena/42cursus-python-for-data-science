@@ -1,5 +1,5 @@
 services:
-  d01-py-for-dt:
+  d02-py-for-dt:
     image: d02-py-for-dt:42
     container_name: d02-py-for-dt
     init: true
